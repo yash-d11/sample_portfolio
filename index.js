@@ -32,7 +32,7 @@ t1.from(`#page1-right`,{
         trigger: `#page2`,
         scroller: "body",
         
-        start: "top 30%",
+        start: "top 40%",
         end: "top 10%",
         // scrub: 3,
       },
@@ -54,7 +54,7 @@ t2.from(`#page2-right`,{
         trigger: `#page3`,
         scroller: "body",
         
-        start: "top 30%",
+        start: "top 40%",
         end: "top 10%",
         // scrub: 3,
       },
@@ -79,7 +79,7 @@ gsap.from("#page4",{
         trigger: `#page4`,
         scroller: "body",
         
-        start: "top 70%",
+        start: "top 80%",
         end: "top 50%",
         // scrub: 3,
       }
@@ -93,7 +93,7 @@ gsap.from("#page5",{
         trigger: `#page5`,
         scroller: "body",
         
-        start: "top 70%",
+        start: "top 80%",
         end: "top 50%",
         // scrub: 3,
       }
@@ -106,7 +106,7 @@ gsap.from("#page6",{
         trigger: `#page6`,
         scroller: "body",
         
-        start: "top 70%",
+        start: "top 80%",
         end: "top 50%",
         // scrub: 3,
       }
@@ -117,22 +117,22 @@ ab.addEventListener("click",function(){
     
     gsap.to("#page6 #right hr",{
         opacity:0,
-        duration:3
+        duration:2
     },"e")
     gsap.to("#page6 #right",{
         rotation:360,
-        duration:3
+        duration:2
     },"e")
     
     gsap.to("#page6 #right i",{
         x:-95,
-        duration:3
+        duration:2
         
     },"e")
     gsap.to("#page6 #right h2",{
         y:-140,
         x:140,
-        duration:3,
+        duration:2,
         scale:1.8
     },"e")
     document.querySelector("#page6 #right h2").innerHTML = "Sent"
